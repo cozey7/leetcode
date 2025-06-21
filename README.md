@@ -1,2 +1,2 @@
 # Keep track of my Leetcode progress! ✅
-Goal: 1 leetcode everyday
+Goal: 1 problem everyday
