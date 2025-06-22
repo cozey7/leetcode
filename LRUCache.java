@@ -2,7 +2,7 @@
 package leetcode;
 import java.util.*;
 
-public class Node {
+class Node {
     int key;
     int value;
     Node next;
