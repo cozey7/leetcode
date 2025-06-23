@@ -1,5 +1,4 @@
 // 134. Gas Station - 05.27.2025
-package leetcode;
 
 class Solution {
     public int canCompleteCircuit(int[] gas, int[] cost) {

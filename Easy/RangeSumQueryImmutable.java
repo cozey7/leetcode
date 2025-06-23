@@ -1,5 +1,4 @@
 // 303. Range Sum Query - Immutable - 05.28.2025
-package leetcode;
 import java.util.*;
 
 class NumArray {

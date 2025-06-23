@@ -1,5 +1,4 @@
 // 122. Best Time to Buy and Sell Stock II - 06.04.2025
-package leetcode;
 
 class Solution {
     public int maxProfit(int[] prices) {

@@ -1,5 +1,4 @@
 // 198. House Robber - 05.29.2025
-package leetcode;
 
 class Solution {
     public int rob(int[] nums) {

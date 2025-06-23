@@ -1,5 +1,4 @@
 // 71. Simplify Path - 05.29.2025
-package leetcode;
 import java.util.*;
 
 class Solution {

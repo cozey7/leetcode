@@ -1,5 +1,4 @@
 // 11. Container With Most Water - 06.11.2025
-package leetcode;
 
 class Solution {
     public int maxArea(int[] height) {

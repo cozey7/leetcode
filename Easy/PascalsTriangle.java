@@ -1,5 +1,4 @@
 // 118. Pascal's Triangle - 05.21.2025
-package leetcode;
 import java.util.*;
 
 class Solution {

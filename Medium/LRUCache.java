@@ -1,5 +1,4 @@
 // 146. LRU Cache - 05.25.2025
-package leetcode;
 import java.util.*;
 
 class Node {
@@ -99,13 +98,13 @@ class LRUCache {
         this.addToHead(d);
     }
 
-    private void print() {
-        for(Node i = this.head.next; i != this.tail; i = i.next) {
-            System.out.print("[" + i.key + "," + i.value + "], ");
-        }
-        System.out.print("size=" + this.size);
-        System.out.println();
-    }
+    // private void print() {
+    //     for(Node i = this.head.next; i != this.tail; i = i.next) {
+    //         System.out.print("[" + i.key + "," + i.value + "], ");
+    //     }
+    //     System.out.print("size=" + this.size);
+    //     System.out.println();
+    // }
 
 
 

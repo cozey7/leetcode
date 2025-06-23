@@ -1,5 +1,4 @@
 // 1004. Max Consecutive Ones III - 05.28.2025
-package leetcode;
 
 class Solution {
     public int longestOnes(int[] nums, int k) {

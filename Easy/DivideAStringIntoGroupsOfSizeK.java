@@ -1,5 +1,4 @@
 // 2138. Divide a String Into Groups of Size k - 06.21.2025
-package leetcode;
 
 class Solution {
     public String[] divideString(String s, int k, char fill) {

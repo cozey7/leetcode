@@ -1,5 +1,4 @@
 // 937. Reorder Data in Log Files - 05.27.2025
-package leetcode;
 import java.util.*;
 
 class Solution {
