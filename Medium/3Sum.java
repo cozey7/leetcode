@@ -1,44 +1,40 @@
-// 15. 3Sum - 06.25.2025
+// 15. 3Sum - 06.26.2025
 import java.util.*;
 
-// This solution is not optimal and I know how to make it better (currently in progress)
 class Solution {
-
-    class Pair {
-        int x;
-        int y;
-
-        public Pair(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
-    }
-
-    // custom hashset (override equals) - sort nums first
 
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
-        List<List<Integer>> res = new ArrayList<>();
-        Set<List<Integer>> triplets = new HashSet<>();
-
+        List<List<Integer>> triplets = new ArrayList<>();
+        
         for(int i = 0; i < nums.length-2; i++) {
-            
-            Map<Integer, Pair> map = new HashMap<>();
 
-            for(int j = i+1; j < nums.length; j++) {
-                Pair p = map.get(nums[j]);
+            if(nums[i] > 0) break;
 
-                if(p == null) {
-                    map.put(-nums[i]-nums[j], new Pair(nums[i], nums[j]));
-                }
-                else {
-                    triplets.add(Arrays.asList(p.x, p.y, nums[j]));
-                    map.remove(nums[j]);
+            if(i > 0 && nums[i] == nums[i-1]) continue;
+
+            int left = i+1;
+            int right = nums.length-1;
+
+            while(left < right) {
+                int sum = nums[i] + nums[left] + nums[right];
+
+                if(sum == 0) {
+                    Integer[] triple = new Integer[] {nums[i], nums[left], nums[right]};
+                    triplets.add(Arrays.asList(triple));
+
+                    int tempL = nums[left];
+                    int tempR = nums[right];
+                    while(nums[left] == tempL && left < right) left++;
+                    while(nums[right] == tempR && right > left) right--;
+
+                } else if(sum < 0) {
+                    left++;
+                } else if(sum > 0) {
+                    right--;
                 }
             }
         }
-
-        res.addAll(triplets);
-        return res;
+        return triplets;
     }
 }
